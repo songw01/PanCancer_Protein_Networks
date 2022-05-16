@@ -928,17 +928,6 @@ if (TRUE)
   gobj
 }
 
-###### Combined heatmap
-hplot = gen_mom_heatmap(input.cor = mom.cor.res)
-pdf(file = paste(out.dir,"/inter_MoM_core_correlation.pdf",sep = ""),width = 20,height = 20)
-print(hplot)
-dev.off()
-
-hplot = gen_mom_heatmap(input.cor = subset(mom.cor,type == "MoM"))
-pdf(file = paste(out.dir,"/inter_MoM_correlation.pdf",sep = ""),width = 35,height = 8)
-print(hplot)
-dev.off()
-
 ######################## MSigDB enrichments
 ## Now, check MoM enrichments for MSigDB
 source("scripts/R_functions/enrichment_functions.R")
@@ -949,7 +938,7 @@ if (TRUE)
   print(length(bg))
   
   ## get GMT files
-  gmt.folder = "C:/Users/songw01/Documents/MSigDB/FrequentSets"
+  gmt.folder = "Data/MSigDB"
   
   # get respective gmt files
   gmt.files <- list.files(path = gmt.folder,full.names = TRUE,pattern = "\\.gmt$")
