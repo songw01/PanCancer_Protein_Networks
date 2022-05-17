@@ -1,4 +1,4 @@
-# PanCancer_Protein_Networks
+# PanCancer Protein Networks
 
 *Correspondence: Won-Min Song (won-min.song@mssm.edu or wonmin1984@gmail.com)
 
