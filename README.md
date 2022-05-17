@@ -3,14 +3,15 @@
 *Correspondence: Won-Min Song (won-min.song@mssm.edu or wonmin1984@gmail.com)
 
 ### Data download
-The github page houses companion R codes to reproduce results and figures for pan-cancer protein network study. The input data can be dowloaded at https://www.synapse.org/#!Synapse:syn30554232, or using the following R codes via synapser package: 
+The github page houses companion R codes to reproduce results and figures for pan-cancer protein network study. The input data can be dowloaded at https://www.synapse.org/#!Synapse:syn30595684, or using the following R codes via synapser package: 
 
 library(synapser)
 
 library(synapserutils)
 
 synLogin("synapse_username","password")
-files <- synapserutils::syncFromSynapse("syn30554232")
+
+files <- synapserutils::syncFromSynapse("syn30595684")
 
 The .tar.gz file must be extracted under "Data" folder.
 
