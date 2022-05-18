@@ -29,5 +29,9 @@ The .tar.gz file must be extracted under "Data" folder.
 - **QCed_Proteome**: Batch, age and gender adjusted protein expression data that were used for network constructions. 
 - **PRO_Clinical_Signatures.RDS**: Pre-compiled protein signatures in .RDS format for quick loading in R workspace
 
+### Main codes: 
 
-
+- **analyze_DEPs.R**: codes to reproduce DEP results in Figure 2. 
+- **MoM_analysis.v1.R**: codes to analyze and reproduce Modules-of-Modules results in Figure 3.
+- **summarize_transcriptome_preservation_wt_sunburst.R**: codes to analyze and reproduce transcriptome preservation results in Figure 4. 
+- **analyze_network_connectivity.R**: codes to analyze protein network hubs and nominated key network regulators via KDA in Figure 5. 
